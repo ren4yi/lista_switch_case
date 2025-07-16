@@ -6,11 +6,27 @@
     */
 
     //ENTRADA
-
     
+    const numero = Number(prompt(`Informe um número.`));
+    
+    const divisao = numero % 2
+
     //PROCESSAMENTO
 
+    switch(divisao == 0){
     
+    case true :
+
+    document.write(`O número é par!`)
+
+    break;
+
+    default :
+
+    document.write(`O número é ímpar!`)
+
+    break;
+    }
     //SAÍDA
 
 </script>
