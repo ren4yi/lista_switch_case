@@ -10,11 +10,31 @@
     */
 
     // ENTRADA
-
+      const porte = prompt(`Qual o porte do seu cão? Responda com: P (pequeno), M (médio) ou G (grande)`);
+       const idade = Number(prompt(`Qual é a idade do seu cão?`));
     
     // PROCESSAMENTO
+   
+    switch (porte) {
 
-    
+     case "P" :
+        const multP = idade * 5;
+        alert(`Seu cão teria ${multP} anos humanos`)
+
+        break;
+
+        case "M" :
+           const multM = idade * 6;
+        alert(`Seu cão teria ${multM} anos humanos`)
+
+        break;
+
+        default :
+
+        const multG = idade * 7;
+        alert(`Seu cão teria ${multG} anos humanos`)
+    }
+
     // SAÍDA
 
 </script>

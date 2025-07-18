@@ -12,11 +12,52 @@
     */
 
     //ENTRADA
+    const telefone = Number(prompt(`Telefonou para a vítima?(Não-0 Sim-1)`));
 
-    
+    const localCrime = Number(prompt(`Esteve no local do crime?(Não-0 Sim-1)`));
+
+    const local = Number(prompt(`Mora perto da vítima(Não-0 Sim-1)`));
+
+    const dever = Number(prompt(`Devia para a vítima?(Não-0 Sim-1)`));
+
+    const trabalho = Number(prompt(`Já trabalhou com a vítima?(Não-0 Sim-1)`));
+
     //PROCESSAMENTO
 
+   const pontos = telefone + localCrime + local + dever + trabalho
 
+    switch (pontos) {
+
+    case 2 :
+        document.write(`Suspeita`)
+
+        break;
+     
+    case 3 :
+
+        document.write(`Cúmplice`)
+
+        break;
+
+        case 4 :
+
+        document.write(`Cúmplice`)
+
+        break;
+
+        case 5 :
+
+            document.write(`Assasino`)
+
+        break;
+
+            default : 
+
+             document.write(`Inocente`)
+             
+            break;
+    }
+   
     //SAÍDA
 
 </script>
