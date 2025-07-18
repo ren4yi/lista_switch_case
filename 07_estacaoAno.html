@@ -7,11 +7,100 @@
     */
 
     //ENTRADA
-     
-    
+    const hemisferioUs = prompt(`Qual seu hemisferio?`);
+
+    const mesDoAno = prompt(`Qual o mês atual?`);
+
     //PROCESSAMENTO
 
+    switch (hemisferioUs) {
 
+        case "sul":
+
+            switch (mesDoAno) {
+
+                case "janeiro":
+                case "fevereiro":
+                case "março":
+
+                    document.write(`sua estação é verão`);
+
+                    break;
+
+                case "abril":
+                case "maio":
+                case "junho":
+
+                    document.write(`sua estação é outono`);
+
+                    break;
+
+                case "julho":
+                case "agosto":
+                case "setembro":
+
+                    document.write(`sua estação é inverno`);
+
+                    break;
+
+                case "outubro":
+                case "novembro":
+                case "dezembro":
+
+                    document.write(`sua estação é primavera`);
+
+                    break;
+
+                default:
+                    document.write(`ENVIE UMA RESPOSTA VÁLIDA!`)
+                    break;
+            }
+            
+            break;
+
+        case "norte":
+
+            switch (mesDoAno) {
+
+                case "janeiro":
+                case "fevereiro":
+                case "março":
+
+                    document.write(`sua estação é inverno`);
+
+                    break;
+
+                case "abril":
+                case "maio":
+                case "junho":
+
+                    document.write(`sua estação é primavera`);
+
+                    break;
+
+                case "julho":
+                case "agosto":
+                case "setembro":
+
+                    document.write(`sua estação é verão`);
+
+                    break;
+
+                case "outubro":
+                case "novembro":
+                case "dezembro":
+
+                    document.write(`sua estação é outono`);
+
+                    break;
+
+                default:
+                    document.write(`resposta inválida`)
+                    break;
+            }
+            break;
+    }
     //SAÍDA
+
 
 </script>

@@ -12,11 +12,95 @@
 
     const numero1 = Number(prompt(`Informe um primeiro número`));
     const numero2 = Number(prompt(`informe um segundo número`));
-    const operacao = prompt(`Informe uma operação`);
+    const operacaoUsuario = prompt(`Informe uma operação (adição, subtração, divisão, multiplicação)`);
+
+
+    let operacao;
+    
+    let positivoNegativo;
+
+    let parImpar;
+
+    let inteiroDecimal;
 
     //PROCESSAMENTO
+   
+    switch (operacaoUsuario) {
+      
+      case "adição" : 
 
+      operacao = numero1 + numero2
+      
+      break;
+
+      case "subtração" :
+
+      operacao = numero1 - numero2
+
+      break;
+
+      case "divisão" :
+
+      operacao = numero1 / numero2
+
+      break;
+
+      case "multiplicação" :
+      
+      operacao = numero1 * numero2
+
+      break;
+    }
     
+    const divisao = operacao % 2
+
+    switch(divisao == 0){
+    
+    case true :
+
+    parImpar = "par"
+
+    break;
+
+    default :
+
+    parImpar = "ímpar"
+
+    break;
+    }
+    
+    switch (operacao > 0) {
+     
+        case true :
+
+        positivoNegativo = "positivo"
+        
+        break;
+        
+        case false :
+        
+        positivoNegativo = "negativo"
+        
+        break;
+    }
+
+    switch (Number.isInteger(operacao)) {
+
+     case true :
+        inteiroDecimal = "inteiro"
+
+        break;
+
+        case false :
+            
+        inteiroDecimal = "decimal"
+
+        break;
+
+    }
+
+   document.write(`O resultado da operação é ${operacao}, o número é ${parImpar}, o número é ${positivoNegativo} e ${inteiroDecimal}`)
+
     //SAÍDA
 
 </script>
